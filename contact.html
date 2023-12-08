@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+    <link rel="icon" type="icon" href="./Images/icon.png">
+    <link rel="stylesheet" type="text/css" href="./contact.css">
+    <script src="https://kit.fontawesome.com/943b27ad09.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <!-- body of website -->
+    <!-- nav bar -->
+    <div class="navbar">
+        <section><img src="./Images/Logo.png"></section>
+        <section class="index">
+            <a href="./index.html">Home</a>
+            <a href="./aboutus.html">About Us</a>
+            <a href="./unitfranchaise.html">Franchise</a>
+            <a href="./service.html">Service</a>
+            <a href="./gallery.html">Gallery</a>
+            <a href="./blog.html">Blog</a>
+            <a href="./contact.html">Contact</a>
+        </section>
+        <button class="nav-btn" onclick="nav()"><i class="fa-solid fa-bars"></i></button>
+        <!-- <section><i class="fa-solid fa-bars" style="color: #fb0909;font-size: 32px;padding-right: 30px;"></i></section> -->
+    </div>
+    <div class="media-index" id="navbar">
+        <a href="./index.html">Home</a>
+        <a href="./aboutus.html">About Us</a>
+        <a href="./unitfranchaise.html">Franchaise</a>
+        <a href="./service.html">Service</a>
+        <a href="./gallery.html">Gallery</a>
+        <a href="./blog.html">Blog</a>
+        <a href="./contact.html">Contact</a>
+    </div>
+    <!-- contact head -->
+    <div class="contacthead">
+        <p class="first">Wanna Talk to Us?</p>
+        <p class="second">We Are Sure You Have Questions Which Deserve Answers…! Let Us Know How We Can Improve Your Favorite Tea..!</p>
+    </div>
+    <!-- contact details -->
+    <div class="contactdetails">
+        <section class="contactform">
+            <p class="first">We Would Like To Hear From You!</p>
+            <p class="second">Delight us with your tea stories..! Send us your cherished garam-garam experience..!</p>
+            <label for="name">Name</label><br><input type="text" id="name" placeholder="Name"><br>
+            <label for="no">Mobile No</label><br><input type="text" id="no" placeholder="Mobile No"><br>
+            <label for="mail">E-mail</label><br><input type="email" id="mail" placeholder="E-mail"><br>   
+            <label for="area">Area Name</label><br><input type="text" id="area" placeholder="Area Name"><br>
+            <label for="state">State</label><br><input type="text" id="state" placeholder="State"><br>
+            <label for="country">Country</label><br><input type="text" id="country" placeholder="Country"><br>
+            <label for="look">Why are you looking for?</label><br><input type="text" list="data" id="look" placeholder="Choose the option"><br>
+            <datalist id="data">
+                <option value="Master Franchise">
+                <option value="Unit Franchise">
+            </datalist>
+            <label for="no">Message</label><br><textarea id="msg" cols="59" rows="7" placeholder="Message"></textarea><br>
+            <button>Submit</button>
+        </section>
+        <section class="contactaddress">
+            <p class="first">You can also reach out us on below contact</p>
+            <div class="contactloc">
+                <i class="fa-solid fa-location-dot"></i>
+                <p>Desi Tea Time Ltd.<br>
+                    Plot No 19, Cyber Pearl,<br>
+                    Hitech City, Madhapur<br>
+                    Hyderabad, Telangana,<br>
+                    Pin Code : 500081</p>
+            </div>
+            <i class="fa-solid fa-envelope"></i><p class="contactemail">franchise@teatimegroup.com</p><br><br>
+            <i class="fa-solid fa-phone"></i><p class="contactno">+91 968 544 7676</p>
+        </section>
+    </div>
+    <!-- associate -->
+    <div class="associate">
+        <p class="associatehead">In Association with</p>
+        <div class="associateimg">
+            <section><img src="./Images/New1.png"></section>
+            <section><img src="./Images/New2.png"></section>
+        </div>
+    </div>
+    <!-- footer -->
+    <div class="foot">
+        <section class="foot1">
+            <div class=footimg><img src="./Images/Logo.png"></div>
+            <p class="footart">TEA TIME is one of the largest tea brands of India, having a chain of tea outlets selling different kinds of TEA, COOLERS & SHAKES at reasonable prices.</p>
+            <p class="foot1icon"><i class="fa-brands fa-facebook"></i><i class="fa-brands fa-instagram"></i><i class="fa-brands fa-youtube"></i></p>
+        </section>
+        <section class="foot2">
+            <p class="foothead">Quick Links</p>
+            <a href="./aboutus.html">About Us</a>
+            <a href="./unitfranchaise.html">Unit Franchise</a>
+            <a href="./gallery.html">Gallery</a>
+            <a href="./contact.html">Contact</a>
+        </section>
+        <section class="foot3">
+            <p class="foothead">Reach Us</p>
+            <a href=""><i class="fa-solid fa-envelope"></i>franchise@teatimegroup.com</a>
+            <p><i class="fa-solid fa-location-dot"></i>Desi Tea Time Ltd. Plot No 19,<br>Cyber Pearl, Hitech City,<br>Madhapur Hyderabad,<br>Telangana,Pin Code : 500081</p>
+            <p><i class="fa-solid fa-phone"></i>(+91) 968 566 7676</p>
+        </section>
+        <section class="foot4">
+            <div class="feedbox">
+                <p class="feedboxhead">Get in Touch</p>
+                <input type="text" placeholder="Name">
+                <input type="text" placeholder="Email">
+                <input type="text" placeholder="Phone Number">
+                <input type="text" placeholder="Place">
+                <button>Submit</button>
+            </div>
+        </section>
+    </div>
+    <!-- reserved -->
+    <hr>
+    <div class="reserve">
+        VENGALAMADASAMY V © 2022, ALL RIGHTS RESERVED.
+    </div>
+    <!-- fixing -->
+    <div class="fix" id="side">
+        <button class="fixarrow" onclick="side_design()"><i class="fa-solid fa-arrow-right"></i></button>
+        <section class="fixwhat" id="phn"><i class="fa-brands fa-whatsapp"></i></section>
+        <section class="fixphone" id="wht"><i class="fa-solid fa-phone"></i></section>
+    </div>
+    <script src="./index.js">
+
+    </script>
+</body>
+</html>

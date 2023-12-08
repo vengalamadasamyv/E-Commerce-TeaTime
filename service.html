@@ -1,0 +1,550 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TeaTime | Service</title>
+    <link rel="stylesheet" type="text/css" href="./service.css">
+    <link rel="icon" href="./Images/icon.png">
+    <script src="https://kit.fontawesome.com/943b27ad09.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <!-- nav bar -->
+    <div class="navbar">
+        <section><img src="./Images/Logo.png"></section>
+        <section class="index">
+            <a href="./index.html">Home</a>
+            <a href="./aboutus.html">About Us</a>
+            <a href="./unitfranchaise.html">Franchiase</a>
+            <a href="./service.html">Service</a>
+            <a href="./gallery.html">Gallery</a>
+            <a href="./unitfranchaise.html">Blog</a>
+            <a href="./contact.html">Contact</a>
+        </section>
+        <button class="nav-btn" onclick="nav()"><i class="fa-solid fa-bars"></i></button>
+    </div>
+    <div class="media-index" id="navbar">
+        <a href="./index.html">Home</a>
+        <a href="./aboutus.html">About Us</a>
+        <a href="./unitfranchaise.html">Franchaise</a>
+        <a href="./service.html">Service</a>
+        <a href="./gallery.html">Gallery</a>
+        <a href="./blog.html">Blog</a>
+        <a href="./contact.html">Contact</a>
+    </div>
+    <!-- location navbar -->
+    <nav class="location_navbar">
+        <button onclick="loc()" class="setloc">Set Location</button>
+        <section class="location_navbar1">
+            <p><i class="fa-solid fa-user"></i> Sign in</p>
+            <p><i class="fa-solid fa-cart-shopping"></i> Cart</p>
+            <p><i class="fa-solid fa-circle-question"></i> Help</p>
+        </section>
+    </nav>
+    <!-- location sidebar -->
+    <div class="location_sidebar" id="location_sidebar">
+        <button class="location_sidebar_close" onclick="loc()">X</button>
+        <input type="search" placeholder="Search for area, street name..." class="location_sidebar_search">
+        <button class="location_sidebar_curloc" onclick="curloc()">Get current location (using GPS)</button>
+    </div>
+    <!-- timeout alert -->
+    <div class="location_alert" id="location_alert">
+        <p style="font-size: 22px;">ADD YOUR DELIVERY ADDRESS</p>
+        <p>To find out if we can deliver to your location, enter your address.</p>
+    </div>
+    <!-- tea heading -->
+    <div class="service_heading">
+        <section class="service_head1">
+            <p style="font-size: 22px; font-weight: 800;">Tea Time</p>
+            <p>Location</p>
+        </section>
+        <section class="service_head2">
+            <p class="service_head_rate"><i class="fa-solid fa-star"></i> --</p>
+            <hr>
+            <p>Too Few Ratings</p>
+        </section>
+    </div>
+    <!-- offers -->
+    <div class="offers">
+        <section class="offer_card">
+            <p>20% OFF UPTO &dollar;125</p>
+            <p> USE TEA100</p>
+        </section>
+        <section class="offer_card">
+            <p>FLAT &dollar;120 OFF</p>
+            <p> USE TT120</p>
+        </section>
+        <section class="offer_card">
+            <p>9% OFF UPTO &dollar;99</p>
+            <p> USE VIP09</p>
+        </section>
+    </div>
+    <!-- veg or non veg -->
+    <div class="service_type">
+        <input type="checkbox"> Veg only
+    </div>
+    <!-- Service content -->
+    <div class="service_content">
+        <section class="content" id="content1">
+            <div class="content_heading">
+                <p>Recommended (6)</p>
+                <button class="content_arrow" onclick="krop1()" id="content_arrow1">
+                    <i class="fa-solid fa-chevron-down"></i>
+                </button>
+            </div>
+            <div class="content_body" id="content_body1">
+                <section class="body1_dumtea">
+                    <div>
+                        <img src="./Images/content veg.png" class="veg">
+                        <p class="body1_title">Dum Tea Flask</p>
+                        <p class="body1_title">&#8377;100</p>
+                    </div>
+                    <div>
+                        <img class="body1_image" src="https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_1024/f6fl3hxxzex2z8fh8uka">
+                    </div>
+                </section>
+                <section class="body1_dumtea">
+                    <div>
+                        <img src="./Images/content veg.png" class="veg">
+                        <p class="body1_title">Ginger Tea Flask</p>
+                        <p class="body1_title">&#8377;110</p>
+                    </div>
+                    <div>
+                        <img class="body1_image" src="https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_1024/to3bhtm7suxf5afvhznq">
+                    </div>
+                </section>
+                <section class="body1_dumtea">
+                    <div>
+                        <img src="./Images/content veg.png" class="veg">
+                        <p class="body1_title">Kullad Tea Flask</p>
+                        <p class="body1_title">&#8377;135</p>
+                    </div>
+                    <div>
+                        <img class="body1_image" src="https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_1024/cockahhx0ggqrpvmpn10">
+                    </div>
+                </section>
+                <section class="body1_dumtea">
+                    <div>
+                        <img src="./Images/content veg.png" class="veg">
+                        <p class="body1_title">Lemon Black Tea Flask</p>
+                        <p class="body1_title">&#8377;110</p>
+                    </div>
+                    <div>
+                        <img class="body1_image" src="https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_1024/nvppqczqafqrtms10ojs">
+                    </div>
+                </section>
+                <section class="body1_dumtea">
+                    <div>
+                        <img src="./Images/content veg.png" class="veg">
+                        <p class="body1_title">Ginger Lemon Tea Flask</p>
+                        <p class="body1_title">&#8377;110</p>
+                    </div>
+                    <div>
+                        <img class="body1_image" src="https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_1024/nvppqczqafqrtms10ojs">
+                    </div>
+                </section>
+                <section class="body1_dumtea">
+                    <div>
+                        <img src="./Images/content veg.png" class="veg">
+                        <p class="body1_title">Green Tea Flask</p>
+                        <p class="body1_title">&#8377;160</p>
+                    </div>
+                    <div>
+                        <img class="body1_image" src="https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_1024/lyfi9tjocn7elxt6lam6">
+                    </div>
+                </section>
+
+
+
+            </div>
+        </section>
+        <section class="content" id="content2">
+            <div class="content_heading">
+                <p>Tea Flask (4)</p>
+                <button class="content_arrow" onclick="krop2()" id="content_arrow2">
+                    <i class="fa-solid fa-chevron-down"></i>
+                </button>
+            </div>
+            <div class="content_body" id="content_body2">
+                <section class="body1_dumtea">
+                    <div>
+                        <img src="./Images/content veg.png" class="veg">
+                        <p class="body1_title">Dum Tea Flask</p>
+                        <p class="body1_title">&#8377;100</p>
+                    </div>
+                    <div>
+                        <img class="body1_image" src="https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_1024/f6fl3hxxzex2z8fh8uka">
+                    </div>
+                </section>
+                <section class="body1_dumtea">
+                    <div>
+                        <img src="./Images/content veg.png" class="veg">
+                        <p class="body1_title">Ginger Tea Flask</p>
+                        <p class="body1_title">&#8377;110</p>
+                    </div>
+                    <div>
+                        <img class="body1_image" src="https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_1024/to3bhtm7suxf5afvhznq">
+                    </div>
+                </section>
+                <section class="body1_dumtea">
+                    <div>
+                        <img src="./Images/content veg.png" class="veg">
+                        <p class="body1_title">Kullad Tea Flask</p>
+                        <p class="body1_title">&#8377;135</p>
+                    </div>
+                    <div>
+                        <img class="body1_image" src="https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_1024/cockahhx0ggqrpvmpn10">
+                    </div>
+                </section>
+                <section class="body1_dumtea">
+                    <div>
+                        <img src="./Images/content veg.png" class="veg">
+                        <p class="body1_title">Masala Tea Flask</p>
+                        <p class="body1_title">&#8377;125</p>
+                    </div>
+                    <div>
+                        <img class="body1_image" src="https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_1024/cockahhx0ggqrpvmpn10">
+                    </div>
+                </section>
+            </div>
+        </section>
+        <section class="content" id="content3">
+            <div class="content_heading">
+                <p>Black Tea Flask (4)</p>
+                <button class="content_arrow" onclick="krop3()" id="content_arrow3">
+                    <i class="fa-solid fa-chevron-down"></i>
+                </button>
+            </div>
+            <div class="content_body" id="content_body3">
+                <section class="body1_dumtea">
+                    <div>
+                        <img src="./Images/content veg.png" class="veg">
+                        <p class="body1_title">Black Tea Flask</p>
+                        <p class="body1_title">&#8377;100</p>
+                    </div>
+                    <div>
+                        <img class="body1_image" src="https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_1024/nvppqczqafqrtms10ojs">
+                    </div>
+                </section>
+                <section class="body1_dumtea">
+                    <div>
+                        <img src="./Images/content veg.png" class="veg">
+                        <p class="body1_title">Lemon Black Tea Flask</p>
+                        <p class="body1_title">&#8377;110</p>
+                    </div>
+                    <div>
+                        <img class="body1_image" src="https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_1024/nvppqczqafqrtms10ojs">
+                    </div>
+                </section>
+                <section class="body1_dumtea">
+                    <div>
+                        <img src="./Images/content veg.png" class="veg">
+                        <p class="body1_title">Ginger Lemon Tea Flask</p>
+                        <p class="body1_title">&#8377;110</p>
+                    </div>
+                    <div>
+                        <img class="body1_image" src="https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_1024/nvppqczqafqrtms10ojs">
+                    </div>
+                </section>
+                <section class="body1_dumtea">
+                    <div>
+                        <img src="./Images/content veg.png" class="veg">
+                        <p class="body1_title">Green Tea Flask</p>
+                        <p class="body1_title">&#8377;160</p>
+                    </div>
+                    <div>
+                        <img class="body1_image" src="https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_1024/lyfi9tjocn7elxt6lam6">
+                    </div>
+                </section>
+            </div>
+        </section>
+        <section class="content" id="content4">
+            <div class="content_heading">
+                <p>Hot Milk (2)</p>
+                <button class="content_arrow" onclick="krop4()" id="content_arrow4">
+                    <i class="fa-solid fa-chevron-down"></i>
+                </button>
+            </div>
+            <div class="content_body" id="content_body4">
+                <section class="body1_dumtea">
+                    <div>
+                        <img src="./Images/content veg.png" class="veg">
+                        <p class="body1_title">Coffee Milk Flask</p>
+                        <p class="body1_title">&#8377;135</p>
+                    </div>
+                    <div>
+                        <img class="body1_image" src="https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_1024/ituy5iewjkasfjggc29l">
+                    </div>
+                </section>
+                <section class="body1_dumtea">
+                    <div>
+                        <img src="./Images/content veg.png" class="veg">
+                        <p class="body1_title">Hot Badam Milk Flask</p>
+                        <p class="body1_title">&#8377;135</p>
+                    </div>
+                    <div>
+                        <img class="body1_image" src="https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_1024/i45az1rqvg4ozbrxuaw0">
+                    </div>
+                </section>
+            </div>
+        </section>
+        <section class="content" id="content5">
+            <div class="content_heading">
+                <p>Cookies Combo (4)</p>
+                <button class="content_arrow" onclick="krop5()" id="content_arrow5">
+                    <i class="fa-solid fa-chevron-down"></i>
+                </button>
+            </div>
+            <div class="content_body" id="content_body5">
+                <section class="body1_cookies">
+                    <div>
+                        <img src="./Images/content veg.png" class="veg">
+                        <p class="body1_title">Dum Tea Flask + Boost Biscuits (3 Pieces)</p>
+                        <p class="body1_title">&#8377;116</p>
+                    </div>
+                </section>
+                <section class="body1_cookies">
+                    <div>
+                        <img src="./Images/content veg.png" class="veg">
+                        <p class="body1_title">Ginger Tea Flask + Peanut Biscuits (3 Pieces)</p>
+                        <p class="body1_title">&#8377;126</p>
+                    </div>
+                </section>
+                <section class="body1_cookies">
+                    <div>
+                        <img src="./Images/content veg.png" class="veg">
+                        <p class="body1_title">Masala Tea Flask + Boost Biscuits (3 Pieces)</p>
+                        <p class="body1_title">&#8377;126</p>
+                    </div>
+                </section>
+                <section class="body1_cookies">
+                    <div>
+                        <img src="./Images/content veg.png" class="veg">
+                        <p class="body1_title">Kullad Tea Flask + Peanut Biscuits (3 Pieces)</p>
+                        <p class="body1_title">&#8377;151</p>
+                    </div>
+                </section>
+            </div>
+        </section>
+        <section class="content" id="content6">
+            <div class="content_heading">
+                <p>Cake Combo (8)</p>
+                <button class="content_arrow" onclick="krop6()" id="content_arrow6">
+                    <i class="fa-solid fa-chevron-down"></i>
+                </button>
+            </div>
+            <div class="content_body" id="content_body6">
+                <section class="body1_cookies">
+                    <div>
+                        <img src="./Images/content nonveg.png" class="veg">
+                        <p class="body1_title">Dum Tea Flask + Banana Cake (3 Pieces)</p>
+                        <p class="body1_title">&#8377;155</p>
+                    </div>
+                </section>
+                <section class="body1_cookies">
+                    <div>
+                        <img src="./Images/content nonveg.png" class="veg">
+                        <p class="body1_title">Ginger Tea Flask + Banana Cake (3 Pieces)</p>
+                        <p class="body1_title">&#8377;165</p>
+                    </div>
+                </section>
+                <section class="body1_cookies">
+                    <div>
+                        <img src="./Images/content nonveg.png" class="veg">
+                        <p class="body1_title">Masala Tea Flask + Banana Cake (3 Pieces)</p>
+                        <p class="body1_title">&#8377;155</p>
+                    </div>
+                </section>
+                <section class="body1_cookies">
+                    <div>
+                        <img src="./Images/content nonveg.png" class="veg">
+                        <p class="body1_title">Kullad Tea Flask + Banana Cake (3 Pieces)</p>
+                        <p class="body1_title">&#8377;190</p>
+                    </div>
+                </section>
+                <section class="body1_cookies">
+                    <div>
+                        <img src="./Images/content nonveg.png" class="veg">
+                        <p class="body1_title">Dum Tea Flask + Brownie Cake (2 Pieces)</p>
+                        <p class="body1_title">&#8377;169</p>
+                    </div>
+                </section>
+                <section class="body1_cookies">
+                    <div>
+                        <img src="./Images/content nonveg.png" class="veg">
+                        <p class="body1_title">Ginger Tea Flask + Brownie Cake (2 Pieces)</p>
+                        <p class="body1_title">&#8377;179</p>
+                    </div>
+                </section>
+                <section class="body1_cookies">
+                    <div>
+                        <img src="./Images/content nonveg.png" class="veg">
+                        <p class="body1_title">Masala Tea Flask + Brownie Cake (2 Pieces)</p>
+                        <p class="body1_title">&#8377;179</p>
+                    </div>
+                </section>
+                <section class="body1_cookies">
+                    <div>
+                        <img src="./Images/content nonveg.png" class="veg">
+                        <p class="body1_title">Kullad Tea Flask + Brownie Cake (2 Pieces)</p>
+                        <p class="body1_title">&#8377;209</p>
+                    </div>
+                </section>
+            </div>
+        </section>
+        <section class="content" id="content7">
+            <div class="content_heading">
+                <p>Combo Puffs (12)</p>
+                <button class="content_arrow" onclick="krop7()" id="content_arrow7">
+                    <i class="fa-solid fa-chevron-down"></i>
+                </button>
+            </div>
+            <div class="content_body" id="content_body7">
+                <section class="body1_dumtea">
+                    <div>
+                        <img src="./Images/content veg.png" class="veg">
+                        <p class="body1_title">Dum Tea Flask + Veg Puff (3 Pieces)</p>
+                        <p class="body1_title">&#8377;160</p>
+                    </div>
+                </section>
+                <section class="body1_dumtea">
+                    <div>
+                        <img src="./Images/content veg.png" class="veg">
+                        <p class="body1_title">Ginger Tea Flask + Veg Puff (3 Pieces)</p>
+                        <p class="body1_title">&#8377;170</p>
+                    </div>
+                </section>
+                <section class="body1_dumtea">
+                    <div>
+                        <img src="./Images/content veg.png" class="veg">
+                        <p class="body1_title">Masala Tea Flask + Veg Puff (3 Pieces)</p>
+                        <p class="body1_title">&#8377;170</p>
+                    </div>
+                </section>
+                <section class="body1_dumtea">
+                    <div>
+                        <img src="./Images/content veg.png" class="veg">
+                        <p class="body1_title">Kullad Tea Flask + Veg Puff (3 Pieces)</p>
+                        <p class="body1_title">&#8377;195</p>
+                    </div>
+                </section>
+                <section class="body1_dumtea">
+                    <div>
+                        <img src="./Images/content nonveg.png" class="veg">
+                        <p class="body1_title">Dum Tea Flask + Egg Puff (3 Pieces)</p>
+                        <p class="body1_title">&#8377;165</p>
+                    </div>
+                </section>
+                <section class="body1_dumtea">
+                    <div>
+                        <img src="./Images/content nonveg.png" class="veg">
+                        <p class="body1_title">Ginger Tea Flask + Egg Puff (3 Pieces)</p>
+                        <p class="body1_title">&#8377;175</p>
+                    </div>
+                </section>
+                <section class="body1_dumtea">
+                    <div>
+                        <img src="./Images/content nonveg.png" class="veg">
+                        <p class="body1_title">
+                            Masala Tea Flask + Egg Puff (3 Pieces)</p>
+                        <p class="body1_title">&#8377;175</p>
+                    </div>
+                </section>
+                <section class="body1_dumtea">
+                    <div>
+                        <img src="./Images/content nonveg.png" class="veg">
+                        <p class="body1_title">Kullad Tea Flask + Egg Puff (3 Pieces)</p>
+                        <p class="body1_title">&#8377;199</p>
+                    </div>
+                </section>
+                <section class="body1_dumtea">
+                    <div>
+                        <img src="./Images/content veg.png" class="veg">
+                        <p class="body1_title">Dum Tea Flask + Paneer Puff (3 Pieces)</p>
+                        <p class="body1_title">&#8377;170</p>
+                    </div>
+                </section>
+                <section class="body1_dumtea">
+                    <div>
+                        <img src="./Images/content veg.png" class="veg">
+                        <p class="body1_title">Ginger Tea Flask + Paneer Puff (3 Pieces)</p>
+                        <p class="body1_title">&#8377;180</p>
+                    </div>
+                </section>
+                <section class="body1_dumtea">
+                    <div>
+                        <img src="./Images/content veg.png" class="veg">
+                        <p class="body1_title">Masala Tea Flask + Paneer Puff (3 Pieces)</p>
+                        <p class="body1_title">&#8377;180</p>
+                    </div>
+                </section>
+                <section class="body1_dumtea">
+                    <div>
+                        <img src="./Images/content veg.png" class="veg">
+                        <p class="body1_title">Kullad Tea Flask + Paneer Puff (3 Pieces)</p>
+                        <p class="body1_title">&#8377;200</p>
+                    </div>
+                </section>
+            </div>
+        </section>
+        
+    </div>
+
+
+
+
+    <!-- associate -->
+    <div class="associate">
+        <p class="associatehead">In Association with</p>
+        <div class="associateimg">
+            <section><img src="./Images/New1.png"></section>
+            <section><img src="./Images/New2.png"></section>
+        </div>
+    </div>
+    <!-- footer -->
+    <div class="foot">
+        <section class="foot1">
+            <div class=footimg><img src="./Images/Logo.png"></div>
+            <p class="footart">TEA TIME is one of the largest tea brands of India, having a chain of tea outlets selling different kinds of TEA, COOLERS & SHAKES at reasonable prices.</p>
+            <p class="foot1icon"><i class="fa-brands fa-facebook"></i><i class="fa-brands fa-instagram"></i><i class="fa-brands fa-youtube"></i></p>
+        </section>
+        <section class="foot2">
+            <p class="foothead">Quick Links</p>
+            <a href="./aboutus.html">About Us</a>
+            <a href="./unitfranchaise.html">Unit Franchise</a>
+            <a href="./gallery.html">Gallery</a>
+            <a href="./contact.html">Contact</a>
+        </section>
+        <section class="foot3">
+            <p class="foothead">Reach Us</p>
+            <a href=""><i class="fa-solid fa-envelope"></i>franchise@teatimegroup.com</a>
+            <p><i class="fa-solid fa-location-dot"></i>Desi Tea Time Ltd. Plot No 19,<br>Cyber Pearl, Hitech City,<br>Madhapur Hyderabad,<br>Telangana,Pin Code : 500081</p>
+            <p><i class="fa-solid fa-phone"></i>(+91) 968 566 7676</p>
+        </section>
+        <section class="foot4">
+            <div class="feedbox">
+                <p class="feedboxhead">Get in Touch</p>
+                <input type="text" placeholder="Name">
+                <input type="text" placeholder="Email">
+                <input type="text" placeholder="Phone Number">
+                <input type="text" placeholder="Place">
+                <button>Submit</button>
+            </div>
+        </section>
+    </div>
+    <!-- reserved -->
+    <hr>
+    <div class="reserve">
+        VENGALAMADASAMY V © 2022, ALL RIGHTS RESERVED.
+    </div>
+    <!-- fixing -->
+    <div class="fix" id="side">
+        <button class="fixarrow" onclick="side_design()"><i class="fa-solid fa-arrow-right"></i></button>
+        <section class="fixwhat" id="phn"><i class="fa-brands fa-whatsapp"></i></section>
+        <section class="fixphone" id="wht"><i class="fa-solid fa-phone"></i></section>
+    </div>
+    <script src="./index.js">
+
+    </script>
+</body>
+</html>
